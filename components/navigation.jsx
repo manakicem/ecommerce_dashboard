@@ -6,10 +6,10 @@ function Navigation() {
                 <Link href="/">Ir al Inicio</Link>
             </li>
             <li>
-                <Link href="/login">Iniciar Seccion</Link>
+                <Link href="/singin">Iniciar Seccion</Link>
             </li>
             <li>
-                <Link href="/sing_up">Registrarse</Link>
+                <Link href="/singup">Registrarse</Link>
             </li>
         </ul>
     )
