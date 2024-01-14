@@ -1,5 +1,6 @@
 "use client";
 import {useForm} from 'react-hook-form';
+import axios from 'axios';
 
 function SingIn(){
 
@@ -10,8 +11,14 @@ function SingIn(){
         reset
     } = useForm();
     
-    const onSubmit = handleSubmit((datos) => {
-        console.log(datos);
+    const onSubmit = handleSubmit(async (datos) => {
+        /* const response = await axios({
+            method: 'post',
+            url: '/api/singin',
+            data: datos
+        }); */
+        const response = await axios.post('/api/singin', datos);
+        console.log(response);
         reset();
     });
     
